@@ -1,0 +1,69 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f4f4f4; 
+}
+
+.flag {
+    margin: 20px;
+    height: 200px;
+    width: 300px;
+    border: 1px solid #aaa; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+}
+
+.ivory-coast {
+    background: linear-gradient(90deg, 
+        #f77f00 0%, #f77f00 33.3%, 
+        white 33.3%, white 66.6%, 
+        #009a49 66.6%, #009a49 100%
+    );
+}
+
+.trinidad-tobago {
+    background: linear-gradient(135deg, 
+        #cf0020 0%, #cf0020 30%, 
+        white 30%, white 35%,    
+        black 35%, black 65%,    
+        white 65%, white 70%,    
+        #cf0020 70%, #cf0020 100% 
+    );
+}
+
+.republic-of-congo {
+    background: linear-gradient(135deg, 
+        #009a49 0%, #009a49 45%, 
+        #fcd116 45%, #fcd116 55%, 
+        #cf0020 55%, #cf0020 100% 
+    );
+}
+
+.mauritius {
+    background: linear-gradient(0deg, 
+        #00a851 75%, #00a851 100%, 
+        #ffd400 50%, #ffd400 75%, 
+        #1c38a3 25%, #1c38a3 50%, 
+        #ee2737 0%, #ee2737 25%   
+    );
+}
+
+.botswana {
+    background: linear-gradient(0deg, 
+        #75b2e9 0%, #75b2e9 30%,     
+        white 30%, white 33.33%,     
+        black 33.33%, black 66.66%,  
+        white 66.66%, white 70%,     
+        #75b2e9 70%, #75b2e9 100%    
+    );
+}
+
+.madagascar {
+    background: 
+        linear-gradient(0deg, #007c30 50%, #fc3d32 50%) right / 75% 100%, 
+        #ffffff left / 25% 100%;
+    
+    background-repeat: no-repeat;
+}

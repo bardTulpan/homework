@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    .yellow {
+      background-color: yellow;
+    }
+    table {
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    td {
+      border: 1px solid black;
+      padding: 10px;
+      width: 50px;
+      height: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div>Пользователи:</div> 
+  <ul class="my-list"> 
+    <li id="first">Федор</li> 
+    <li>Вероника</li> 
+  </ul>
+
+  <!-- Таблица 3x3 -->
+  <table id="myTable">
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+    </tr>
+  </table>
+
+  <script>
+    // 1. Получить второй элемент списка
+    const secondListItem = document.querySelector('.my-list li:nth-child(2)');
+    console.log('Второй элемент списка:', secondListItem.textContent);
+
+    // 2. Покрасить ячейки по главной диагонали в желтый цвет
+    const table = document.getElementById('myTable');
+    const rows = table.getElementsByTagName('tr');
+    
+    for (let i = 0; i < rows.length; i++) {
+      const cells = rows[i].getElementsByTagName('td');
+      if (cells[i]) {
+        cells[i].classList.add('yellow');
+      }
+    }
+  </script>
+</body>
+</html>

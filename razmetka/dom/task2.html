@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <form name="search">
+    <label>Поиск по сайту:
+      <input type="text" name="search">
+    </label>
+    <input type="submit" value="Искать!">
+  </form>
+
+  <hr>
+
+  <form name="search-person">
+    Поиск по персоналу:
+    <table id="age-table">
+      <tr>
+        <td>Возраст:</td>
+        <td id="age-list">
+          <label>
+            <input type="radio" name="age" value="young">до 18</label>
+          <label>
+            <input type="radio" name="age" value="mature">18-50</label>
+          <label>
+            <input type="radio" name="age" value="senior">старше 50</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Дополнительно:</td>
+        <td>
+          <input type="text" name="info[0]">
+          <input type="text" name="info[1]">
+          <input type="text" name="info[2]">
+        </td>
+      </tr>
+
+    </table>
+
+    <input type="submit" value="Искать!">
+  </form>
+
+  <script>
+    // 1. Все элементы label внутри таблицы
+    const labelsInTable = document.querySelectorAll('#age-table label');
+    console.log('Label в таблице:', labelsInTable);
+
+    // 2. Первая ячейка таблицы (со словом "Возраст")
+    const firstCell = document.querySelector('#age-table td:first-child');
+    console.log('Первая ячейка:', firstCell.textContent);
+
+    // 3. Вторая форма в документе
+    const secondForm = document.forms[1];
+    console.log('Вторая форма:', secondForm);
+
+    // 4. Форма с именем search
+    const searchForm = document.forms.search;
+    console.log('Форма search:', searchForm);
+
+    // 5. Первый input в форме search
+    const firstInputInSearch = searchForm.querySelector('input');
+    console.log('Первый input в форме search:', firstInputInSearch);
+
+    // 6. Элемент с именем info[0] (в любой форме)
+    const info0 = document.querySelector('input[name="info[0]"]');
+    console.log('Элемент info[0]:', info0);
+ 
+    // 7. Элемент с именем info[0] внутри формы search-person
+    const info0InSearchPerson = document.forms['search-person'].querySelector('input[name="info[0]"]');
+    console.log('info[0] в форме search-person:', info0InSearchPerson);
+  </script>
+</body>
+</html>
