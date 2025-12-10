@@ -1,0 +1,30 @@
+
+.theme-light ul {
+    padding-left: 25px;
+}
+.theme-light .list-item {
+    margin: 6px 0;
+    padding: 4px 8px;
+    border-radius: 6px;
+    list-style-type: square;
+    background: #f2f2f2;
+    color: #222;
+}
+
+.theme-dark ul {
+    padding-left: 25px;
+}
+.theme-dark .list-item {
+    margin: 6px 0;
+    padding: 4px 8px;
+    border-radius: 6px;
+    list-style-type: circle;
+    background: #333;
+    color: #fff;
+}
+
+.theme-button {
+    margin-top: 10px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
