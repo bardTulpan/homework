@@ -18,3 +18,4 @@ class BankAccount:
             raise ValueError("На счете недостаточно средств")
         self.withdraw(amount)
         account.deposit(amount)
+        
